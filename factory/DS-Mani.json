@@ -1,0 +1,9 @@
+{
+	"name": "DS-Mani",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a89321b6-d885-4d76-ae38-ccd7f76e0233",
+		"tenantId": "0799c53e-ca9a-49e8-8901-064a6412a41d"
+	}
+}
