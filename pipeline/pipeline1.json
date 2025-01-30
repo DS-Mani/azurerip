@@ -87,6 +87,12 @@
 									"name": "name",
 									"type": "String"
 								}
+							},
+							{
+								"source": {
+									"name": "address",
+									"type": "String"
+								}
 							}
 						]
 					}
