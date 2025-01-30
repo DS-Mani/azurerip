@@ -14,6 +14,39 @@
 			},
 			"c": {
 				"type": "string"
+			},
+			"d": {
+				"type": "string"
+			},
+			"e": {
+				"type": "string"
+			},
+			"f": {
+				"type": "string"
+			},
+			"g": {
+				"type": "string"
+			},
+			"h": {
+				"type": "string"
+			},
+			"i": {
+				"type": "string"
+			},
+			"j": {
+				"type": "string"
+			},
+			"k": {
+				"type": "string"
+			},
+			"l": {
+				"type": "string"
+			},
+			"m": {
+				"type": "string"
+			},
+			"n": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
