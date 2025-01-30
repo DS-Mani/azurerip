@@ -31,7 +31,8 @@
 						"linkedServiceName": {
 							"referenceName": "AzureDataLakeStorage1",
 							"type": "LinkedServiceReference"
-						}
+						},
+						"path": "demo"
 					},
 					"enableSkipIncompatibleRow": true,
 					"translator": {
