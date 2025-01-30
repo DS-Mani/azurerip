@@ -42,11 +42,19 @@
 							{
 								"source": {
 									"path": "$['emp_id']"
+								},
+								"sink": {
+									"name": "id",
+									"type": "String"
 								}
 							},
 							{
 								"source": {
 									"path": "$['emp_name']"
+								},
+								"sink": {
+									"name": "name",
+									"type": "String"
 								}
 							},
 							{
