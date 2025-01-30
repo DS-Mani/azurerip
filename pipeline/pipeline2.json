@@ -15,8 +15,83 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"enableStaging": false
-				}
+					"source": {
+						"type": "CosmosDbSqlApiSource",
+						"preferredRegions": []
+					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['emp_id']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['emp_name']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['dept']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['id']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_rid']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_self']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_etag']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_attachments']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_ts']"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "CosmosDbNoSqlContainer1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "Json1",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": []
