@@ -64,12 +64,6 @@
 						"referenceName": "CosmosDbNoSqlContainer1",
 						"type": "DatasetReference"
 					}
-				],
-				"outputs": [
-					{
-						"referenceName": "Json1",
-						"type": "DatasetReference"
-					}
 				]
 			},
 			{
@@ -112,12 +106,6 @@
 					},
 					"enableStaging": false
 				},
-				"inputs": [
-					{
-						"referenceName": "Json1",
-						"type": "DatasetReference"
-					}
-				],
 				"outputs": [
 					{
 						"referenceName": "SnowflakeTable1",
