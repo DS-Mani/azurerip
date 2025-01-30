@@ -56,28 +56,21 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['emp_id']"
+									"name": "customer_id",
+									"type": "String"
 								},
 								"sink": {
-									"name": "id",
-									"type": "String"
+									"name": "ID",
+									"type": "Int64"
 								}
 							},
 							{
 								"source": {
-									"path": "$['emp_name']"
-								},
-								"sink": {
-									"name": "name",
+									"name": "first_name",
 									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"path": "$['dept']"
 								},
 								"sink": {
-									"name": "dept",
+									"name": "NAME",
 									"type": "String"
 								}
 							}
