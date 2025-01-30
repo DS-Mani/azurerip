@@ -65,15 +65,6 @@
 									"name": "dept",
 									"type": "String"
 								}
-							},
-							{
-								"source": {
-									"path": "$['id']"
-								},
-								"sink": {
-									"name": "id",
-									"type": "String"
-								}
 							}
 						],
 						"collectionReference": "",
