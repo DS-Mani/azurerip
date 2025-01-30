@@ -17,7 +17,8 @@
 				"typeProperties": {
 					"source": {
 						"type": "CosmosDbSqlApiSource",
-						"preferredRegions": []
+						"preferredRegions": [],
+						"detectDatetime": false
 					},
 					"sink": {
 						"type": "SnowflakeV2Sink",
@@ -26,7 +27,11 @@
 						}
 					},
 					"enableStaging": false,
-					"enableSkipIncompatibleRow": true
+					"enableSkipIncompatibleRow": true,
+					"translator": {
+						"type": "TabularTranslator",
+						"mapComplexValuesToString": false
+					}
 				},
 				"inputs": [
 					{
