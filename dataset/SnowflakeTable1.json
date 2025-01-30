@@ -5,6 +5,17 @@
 			"referenceName": "Snowflake1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"a": {
+				"type": "string"
+			},
+			"b": {
+				"type": "string"
+			},
+			"c": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "SnowflakeV2Table",
 		"schema": []
