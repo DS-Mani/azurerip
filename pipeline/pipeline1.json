@@ -41,7 +41,15 @@
 							"type": "SnowflakeImportCopyCommand"
 						}
 					},
-					"enableStaging": false,
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "AzureBlobStorage1",
+							"type": "LinkedServiceReference"
+						},
+						"path": "abcd",
+						"enableCompression": false
+					},
 					"enableSkipIncompatibleRow": false,
 					"logSettings": {
 						"enableCopyActivityLog": true,
