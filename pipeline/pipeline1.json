@@ -13,7 +13,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "Employees"
+					},
+					{
+						"name": "Destination",
+						"value": "EMP_SC.EMP_T"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "CosmosDbSqlApiSource",
@@ -35,7 +44,7 @@
 						"path": "abcd",
 						"enableCompression": false
 					},
-					"enableSkipIncompatibleRow": true,
+					"enableSkipIncompatibleRow": false,
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
