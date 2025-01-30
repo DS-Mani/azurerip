@@ -41,16 +41,22 @@
 							"type": "SnowflakeImportCopyCommand"
 						}
 					},
-					"enableStaging": true,
-					"stagingSettings": {
-						"linkedServiceName": {
-							"referenceName": "AzureBlobStorage1",
-							"type": "LinkedServiceReference"
-						},
-						"path": "abcd",
-						"enableCompression": false
-					},
+					"enableStaging": false,
 					"enableSkipIncompatibleRow": false,
+					"logSettings": {
+						"enableCopyActivityLog": true,
+						"copyActivityLogSettings": {
+							"logLevel": "Warning",
+							"enableReliableLogging": false
+						},
+						"logLocationSettings": {
+							"linkedServiceName": {
+								"referenceName": "AzureBlobStorage1",
+								"type": "LinkedServiceReference"
+							},
+							"path": "abcd"
+						}
+					},
 					"translator": {
 						"type": "TabularTranslator",
 						"mappings": [
@@ -72,6 +78,15 @@
 								"sink": {
 									"name": "name",
 									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "phone_number",
+									"type": "String"
+								},
+								"sink": {
+									"name": "phon"
 								}
 							}
 						]
