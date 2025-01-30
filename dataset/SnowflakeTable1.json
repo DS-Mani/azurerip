@@ -9,10 +9,6 @@
 		"type": "SnowflakeV2Table",
 		"schema": [
 			{
-				"name": "ID",
-				"type": "VARCHAR"
-			},
-			{
 				"name": "JSON_DATA",
 				"type": "VARIANT"
 			}
