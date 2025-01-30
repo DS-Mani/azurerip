@@ -104,23 +104,11 @@
 							"type": "JsonReadSettings"
 						}
 					},
-					"sink": {
-						"type": "SnowflakeV2Sink",
-						"importSettings": {
-							"type": "SnowflakeImportCopyCommand"
-						}
-					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "Json1",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "SnowflakeTable1",
 						"type": "DatasetReference"
 					}
 				]
