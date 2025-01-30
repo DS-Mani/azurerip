@@ -14,7 +14,6 @@
 				"container": "demo"
 			},
 			"columnDelimiter": ",",
-			"rowDelimiter": "",
 			"escapeChar": "\\",
 			"firstRowAsHeader": false,
 			"quoteChar": "\""
