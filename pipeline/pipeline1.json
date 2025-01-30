@@ -26,7 +26,13 @@
 							"type": "SnowflakeImportCopyCommand"
 						}
 					},
-					"enableStaging": false,
+					"enableStaging": true,
+					"stagingSettings": {
+						"linkedServiceName": {
+							"referenceName": "AzureDataLakeStorage1",
+							"type": "LinkedServiceReference"
+						}
+					},
 					"enableSkipIncompatibleRow": true,
 					"translator": {
 						"type": "TabularTranslator",
