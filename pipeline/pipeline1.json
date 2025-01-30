@@ -32,7 +32,7 @@
 							"referenceName": "AzureBlobStorage1",
 							"type": "LinkedServiceReference"
 						},
-						"path": "demo",
+						"path": "abcd",
 						"enableCompression": false
 					},
 					"enableSkipIncompatibleRow": true,
