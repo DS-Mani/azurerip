@@ -17,17 +17,13 @@
 				"typeProperties": {
 					"source": {
 						"type": "CosmosDbSqlApiSource",
-						"query": "COPY INTO ",
 						"preferredRegions": [],
 						"detectDatetime": false
 					},
 					"sink": {
 						"type": "SnowflakeV2Sink",
 						"importSettings": {
-							"type": "SnowflakeImportCopyCommand",
-							"additionalCopyOptions": {
-								"id": "string"
-							}
+							"type": "SnowflakeImportCopyCommand"
 						}
 					},
 					"enableStaging": true,
