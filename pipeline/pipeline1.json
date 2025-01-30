@@ -74,31 +74,6 @@
 									"name": "id",
 									"type": "String"
 								}
-							},
-							{
-								"source": {
-									"path": "$['_rid']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['_self']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['_etag']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['_attachments']"
-								}
-							},
-							{
-								"source": {
-									"path": "$['_ts']"
-								}
 							}
 						],
 						"collectionReference": "",
