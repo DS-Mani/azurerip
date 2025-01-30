@@ -7,17 +7,6 @@
 		},
 		"annotations": [],
 		"type": "SnowflakeV2Table",
-		"schema": [
-			{
-				"name": "ID",
-				"type": "NUMBER",
-				"precision": 38,
-				"scale": 0
-			},
-			{
-				"name": "NAME",
-				"type": "VARCHAR"
-			}
-		]
+		"schema": []
 	}
 }
