@@ -25,9 +25,15 @@
 				],
 				"typeProperties": {
 					"source": {
-						"type": "CosmosDbSqlApiSource",
-						"preferredRegions": [],
-						"detectDatetime": false
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
 					},
 					"sink": {
 						"type": "SnowflakeV2Sink",
@@ -75,14 +81,12 @@
 									"type": "String"
 								}
 							}
-						],
-						"collectionReference": "",
-						"mapComplexValuesToString": false
+						]
 					}
 				},
 				"inputs": [
 					{
-						"referenceName": "CosmosDbNoSqlContainer1",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				],
