@@ -29,7 +29,7 @@
 					"enableStaging": true,
 					"stagingSettings": {
 						"linkedServiceName": {
-							"referenceName": "AzureDataLakeStorage1",
+							"referenceName": "AzureBlobStorage1",
 							"type": "LinkedServiceReference"
 						},
 						"path": "demo",
@@ -38,6 +38,62 @@
 					"enableSkipIncompatibleRow": true,
 					"translator": {
 						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['emp_id']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['emp_name']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['dept']"
+								},
+								"sink": {
+									"name": "dept",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['id']"
+								},
+								"sink": {
+									"name": "id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_rid']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_self']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_etag']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_attachments']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['_ts']"
+								}
+							}
+						],
+						"collectionReference": "",
 						"mapComplexValuesToString": false
 					}
 				},
