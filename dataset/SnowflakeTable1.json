@@ -7,10 +7,19 @@
 		},
 		"annotations": [],
 		"type": "SnowflakeV2Table",
-		"schema": [],
+		"schema": [
+			{
+				"name": "ID",
+				"type": "VARCHAR"
+			},
+			{
+				"name": "JSON_DATA",
+				"type": "VARIANT"
+			}
+		],
 		"typeProperties": {
 			"schema": "EMP_SC",
-			"table": "JSON_DATA_TABLE"
+			"table": "DATA_TABLE"
 		}
 	}
 }
