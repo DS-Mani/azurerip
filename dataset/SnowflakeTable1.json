@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "EMP_SC",
-			"table": "EMP_T"
+			"table": "JSON_DATA_TABLE"
 		}
 	}
 }
