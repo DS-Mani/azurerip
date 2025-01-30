@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "CosmosDbSqlApiSource",
-						"query": "select ",
+						"query": "COPY INTO ",
 						"preferredRegions": [],
 						"detectDatetime": false
 					},
