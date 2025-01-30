@@ -18,10 +18,6 @@
 				"name": "NAME",
 				"type": "VARCHAR"
 			}
-		],
-		"typeProperties": {
-			"schema": "BOOKING",
-			"table": "TBL1"
-		}
+		]
 	}
 }
