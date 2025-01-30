@@ -73,6 +73,15 @@
 									"name": "NAME",
 									"type": "String"
 								}
+							},
+							{
+								"source": {
+									"name": "last_name",
+									"type": "String"
+								},
+								"sink": {
+									"name": "last"
+								}
 							}
 						]
 					}
