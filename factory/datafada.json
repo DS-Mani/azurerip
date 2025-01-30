@@ -1,0 +1,9 @@
+{
+	"name": "datafada",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9ff30872-c22b-413c-a2dd-0857173c7a94",
+		"tenantId": "c981b908-0bc3-48e2-a71e-fb4d8718f76c"
+	}
+}
