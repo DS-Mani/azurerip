@@ -90,7 +90,11 @@
 							},
 							{
 								"source": {
-									"name": "address",
+									"name": "country",
+									"type": "String"
+								},
+								"sink": {
+									"name": "add",
 									"type": "String"
 								}
 							}
